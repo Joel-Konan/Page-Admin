@@ -1,0 +1,260 @@
+:root{
+    --color-black: black;
+    --color-white: white;
+    --color-grey-text: #8f94a3;
+    --bg-color: rgba(240, 240, 240, 0.822);
+    --color-light-grey: rgba(235, 235, 235, 0.603);
+    --color-purple: #7300eb;
+    --color-profile: #f76d64;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: arial;
+}
+
+.sidebar{
+    position: fixed;
+    background-color: var(--color-white);
+    width: 260px;
+    height: 100vh;
+    padding: 30px 20px 30px;
+    box-shadow: 1px 0px 10px var(--color-grey-text);
+    border-radius: 20px 0 0 20px;
+}
+
+.sidebar h1{
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+ul{
+    padding-bottom: 12px;
+}
+
+.second-ul{
+    border-bottom: 1px solid #ccc;
+}
+
+ul li{
+    list-style: none;
+    font-size: 13px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--color-grey-text);
+}
+
+h3{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: #bbb;
+}
+
+/* main */
+
+.main{
+    margin-left: 260px;
+    padding-left: 30px;
+}
+
+/*head*/
+
+header{
+    height: 75px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 16px;
+}
+
+header div{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div input{
+    padding: 8px 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+.circle_profile{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: var(--color-profile);
+}
+
+/*sub main*/
+.sub_main{
+    display: flex;    width: 100%;
+    padding: 20px 10px;
+}
+
+.left__part{
+    flex: 1;
+    padding: 25px 20px;
+    margin-right: 35px;
+    background-color: var(--color-white);
+    height: 500px;
+    border-radius: 8px;
+}
+
+.profil{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.circle_profil{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: var(--color-profile);
+    margin: 0 auto 20px;
+}
+
+.profil h3{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profil p{
+    color: var(--color-grey-text);
+    text-align: center;
+    font-size: 15px;
+}
+
+.sub h2{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.friend{
+    display: flex;
+    height: 55px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.friend .illustration1, .friend .illustration2, .friend .illustration3, .friend .illustration4{
+    flex: .5;
+    border-radius: 5px;
+    height: 48px;
+    margin-right: 15px;
+}
+
+.friend .illustration1{
+    background: linear-gradient(#480d12,#ab1606);
+
+}
+
+.friend .illustration2{
+    background-color: #e8ca5d;
+
+}
+
+.friend .illustration3{
+    background: linear-gradient(#62c0ce, #c0e4f0);
+}
+
+.friend .illustration4{
+    background-color: #4dc6a5;
+}
+
+.friend .description{
+    flex: 2;
+}
+
+.friend .description h3{
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.friend .description span{
+    color: var(--color-grey-text);
+    font-size: 10px;
+}
+
+/*right part*/
+.right__part{
+    flex: 2;
+    padding: 0 30px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+}
+
+.heading_form{
+    height: 70px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading_form a{
+    color: #00d76d;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 395px;
+}
+
+.champ{
+    padding: 12px;
+    border-radius: 5px;
+    width: 48%;
+    background-color: var(--color-light-grey);
+}
+
+.champ label{
+    font-size: 15px;
+    color: var(--color-grey-text);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.champ input{
+    width: 100%;
+    padding: 11px 10px 11px 0;
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+}
