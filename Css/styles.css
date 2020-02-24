@@ -45,8 +45,21 @@ ul{
 ul li{
     list-style: none;
     font-size: 13px;
-    padding: 10px 0;
+    padding: 10px 5px;
     cursor: pointer;
+    transition: all .3s;
+}
+
+ul li:hover{
+    background-color: rgba(149, 52, 253, 0.603);
+    transition: .2s;
+}
+
+ul li:hover a{
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 16px;
+    transition: .2s;
 }
 
 ul li a{
@@ -103,6 +116,11 @@ header div input{
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: var(--bg-color);
+    color: var(--color-grey-text);
+}
+
+header div input:focus{
+    outline: none;
 }
 
 .circle_profile{
@@ -161,8 +179,16 @@ header div input{
 .friend{
     display: flex;
     height: 55px;
-    padding: 10px 0;
+    padding: 10px 5px;
     cursor: pointer;
+    margin-bottom: 5px;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.friend:hover{
+    box-shadow: 0px 0px 10px var(--color-grey-text);
 }
 
 .friend .illustration1, .friend .illustration2, .friend .illustration3, .friend .illustration4{
@@ -204,6 +230,17 @@ header div input{
     font-size: 10px;
 }
 
+.fleche{
+    color: var(--color-purple);
+    font-size: 14px;
+    display: none;
+    transition: .2s;
+}
+
+.friend:hover .fleche{
+    display: inline;
+}
+
 /*right part*/
 .right__part{
     flex: 2;
@@ -220,6 +257,10 @@ header div input{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.heading_form h3{
+    font-size: 16px;
 }
 
 .heading_form a{
@@ -240,6 +281,8 @@ form{
     border-radius: 5px;
     width: 48%;
     background-color: var(--color-light-grey);
+    border: 1px solid #ccc;
+    transition: all .2s;
 }
 
 .champ label{
@@ -257,4 +300,12 @@ form{
     border: none;
     font-size: 14px;
     background-color: transparent;
+    text-transform: capitalize;
+}
+
+.champ:hover{
+    border-left: 4px solid var(--color-purple);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: .2s;
 }
